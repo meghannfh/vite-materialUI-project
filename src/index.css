@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.lightMode{
+  background-color: white;
+}
 
 a {
   font-weight: 500;
