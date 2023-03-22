@@ -3,8 +3,6 @@ Application to help users keep track of all their insurance card information.
 
 **Link to project:** TBA
 
-![home page](assets/homepage.png)
-
 ## How It's Made
 
 **Tech used:** React w/ Vite, NodeJS
