@@ -7,6 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 import Camera from './Camera';
+import UploadFileButton from './UploadFileButton';
 
 export default function ResponsiveDialog() {
   const [open, setOpen] = React.useState(false);
@@ -35,14 +36,8 @@ export default function ResponsiveDialog() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <Button variant="outlined" htmlFor="file-upload-front">
-                Upload Card Front
-                <input id="file-upload-front" type="file" />
-            </Button>
-            <Button variant="outlined" htmlFor="file-upload-back">
-                Upload Card Back
-                <input id="file-upload-back" type="file" />
-            </Button> 
+            <UploadFileButton message='Upload Card Front' />
+            <UploadFileButton message='Upload Card Back' />
           </DialogContentText>
           <DialogContentText>OR</DialogContentText>
           <DialogContentText>

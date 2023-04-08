@@ -1,6 +1,7 @@
 import React from 'react';
+import Button from '@mui/material/Button';
 
-export default function UploadFileButton() {
+export default function UploadFileButton(props) {
     const hiddenFileInput = React.useRef(null);
     const handleClick = event => {
         hiddenFileInput.current.click();
@@ -12,9 +13,9 @@ export default function UploadFileButton() {
 
     return (
         <>
-            <button onClick={handleClick}>
-                Upload an image
-            </button>
+            <Button variant='outlined' onClick={handleClick}>
+                {props.message}
+            </Button>
             <input 
                 type="file"
                 ref={hiddenFileInput}

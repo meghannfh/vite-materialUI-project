@@ -7,9 +7,9 @@ export default function Footer() {
                 <Link to='/profile'>Profile</Link>
                 <Link to='/about'>About</Link>
                 <Link to='/addCard'>Add a card</Link>
-                <Link to='/'>home</Link>
-                <Link to='/login'>login</Link>
-                <Link to='/signup'>signup</Link>
+                <Link to='/'>Home</Link>
+                <Link to='/login'>Login</Link>
+                <Link to='/signup'>Signup</Link>
             </ul>
         </>
     )
