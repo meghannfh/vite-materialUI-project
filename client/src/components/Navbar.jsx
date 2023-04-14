@@ -4,12 +4,11 @@ export default function Navbar() {
     return(
         <header>
         <div>
-            <Link to="/">
-                <h3>Home</h3>
-            </Link>
-            <Link to="/signup">
-                <h3>Signup</h3>
-            </Link>
+            <Link to='/'>Home</Link>
+            <Link to='/login'>Login</Link>
+            <Link to='/profile'>Profile</Link>
+            <Link to='/signup'>SignUp</Link>
+            <Link to='/addCard'>AddCard</Link>
         </div>
     </header>
     )
