@@ -1,10 +1,20 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+html {
+  background-color: #a4d0b3;
+}
+.box {
+  background-color: #c7d3bd;
+  border: .1rem solid #98c0a5;
+  border-radius: .4rem;
+  box-shadow: .3rem .3rem .3rem #98c0a5;
+  padding: 2rem;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +49,50 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #8fb19a;
+}
+
+.Home {
+  display: grid;
+  grid-template-columns: .8fr 1fr;
+}
+.Home h1 {
+  font-size: 4rem;
+}
+.Home img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 90%;
+}
+.Home button{
+  border-radius: .5rem;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  height: 5rem;
+  width: 10rem;
+  background-color: steelblue;
+  cursor: pointer;
+}
+
+.SignUp input {
+  border-color: #b8acac;
+  border-radius: .3rem;
+}
+
+.card {
+  background-color: #cfe0d5;
+  width: 15rem;
+  border: .1rem solid #a1c4ad;
+  border-radius: .5rem;
+  box-shadow: .2rem .2rem .2rem #a1c4ad;
+  cursor: pointer;
 }

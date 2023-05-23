@@ -1,5 +1,30 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-    return <h1>Login</h1>
+    let navigate = useNavigate(); 
+    const routeSignUp = () =>{ 
+        let path = `/signup`; 
+        navigate(path);
+    }
+    return(
+        <>
+            <section class='Login box'>
+                <section>
+                    <h1>Sign In</h1>
+                </section>
+                <form action="">
+                    <article>
+                        <h3>Email</h3>
+                        <input type="text" />
+                    </article>
+                    <article>
+                        <h3>Password</h3>
+                        <input type="password" />
+                    </article>
+                    <button>Sign In</button>
+                    <button onClick={routeSignUp}>Sign Up</button>
+                </form>
+            </section>
+        </>
+    ) 
 }
