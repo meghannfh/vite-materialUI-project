@@ -52,16 +52,33 @@ html {
 }
 
 .navbar {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #8fb19a;
+  display: grid;
+  grid-template-columns: .5fr 1.5fr 1fr;
+}
+.navbar img {
+  height: 4rem;
+}
+.navbar button {
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  border-radius: .5rem;
+  background-color:#a8ceb4;
+  font-size: 1.5rem;
+  color: seashell;
+  box-shadow: .2rem .2rem .2rem grey;
+  cursor: pointer;
 }
 
 .Home {
   display: grid;
-  grid-template-columns: .8fr 1fr;
+  grid-template-rows: [row1-start] 50% [row2-start] 50% [row2-end];
 }
 .Home h1 {
   font-size: 4rem;
