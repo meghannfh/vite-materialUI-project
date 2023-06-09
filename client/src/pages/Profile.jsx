@@ -10,24 +10,25 @@ export default function Profile() {
         navigate(path);
     }
     return <>
-        <section class='box'>
+        <section class='box profile'>
             <section>
                 <UploadCard />
             </section>
             <section>
                 <h1>My Cards</h1>
             </section>
-            <section>
+            <section class='cardBoard'>
                 <article class='card'>
                     <ModalCard />
                 </article>
                 <article class='card'>
-                    <span>put img here (when clicked on it will enlarge modal && when clicked on while enlarge it will flip to the back side to abel to view both sides)</span>
-                    <h2>example card</h2>
+                    <ModalCard />
                 </article>
                 <article class='card'>
-                    <span>put img here (when clicked on it will enlarge modal && when clicked on while enlarge it will flip to the back side to abel to view both sides)</span>
-                    <h2>example card</h2>
+                    <ModalCard />
+                </article>
+                <article class='card'>
+                    <ModalCard />
                 </article>
             </section>
         </section>

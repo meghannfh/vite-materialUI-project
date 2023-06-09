@@ -43,10 +43,6 @@ html {
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
@@ -112,6 +108,7 @@ html {
   border-radius: .5rem;
   box-shadow: .2rem .2rem .2rem #a1c4ad;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 input[type="file"] {
@@ -122,4 +119,20 @@ label[for="file-upload"] {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
+}
+
+.cardBoard {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 1rem;
+}
+
+.ModalCard img {
+  width: 100%;
+  object-fit: contain;
+}
+
+DialogContent {
+  display: grid;
+  border: 1px red solid;
 }
