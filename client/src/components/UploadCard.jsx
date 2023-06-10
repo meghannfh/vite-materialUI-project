@@ -5,15 +5,11 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
 
 import Camera from './Camera';
 
 export default function ResponsiveDialog() {
   const [open, setOpen] = React.useState(false);
-  const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -39,13 +35,13 @@ export default function ResponsiveDialog() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <Button variant="outlined" htmlFor="file-upload">
+            <Button variant="outlined" htmlFor="file-upload-front">
                 Upload Card Front
-                <input id="file-upload" type="file" />
+                <input id="file-upload-front" type="file" />
             </Button>
-            <Button variant="outlined" htmlFor="file-upload">
+            <Button variant="outlined" htmlFor="file-upload-back">
                 Upload Card Back
-                <input id="file-upload" type="file" />
+                <input id="file-upload-back" type="file" />
             </Button> 
           </DialogContentText>
           <DialogContentText>OR</DialogContentText>

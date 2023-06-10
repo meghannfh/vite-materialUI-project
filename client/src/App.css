@@ -111,9 +111,9 @@ html {
   margin: 0 auto;
 }
 
-input[type="file"] {
+/* input[type="file"] {
   display: none;
-}
+} */
 label[for="file-upload"] {
   border: 1px solid #ccc;
   display: inline-block;
@@ -130,9 +130,4 @@ label[for="file-upload"] {
 .ModalCard img {
   width: 100%;
   object-fit: contain;
-}
-
-DialogContent {
-  display: grid;
-  border: 1px red solid;
 }

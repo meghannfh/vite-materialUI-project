@@ -23,7 +23,7 @@ export default function ResponsiveDialog() {
 
   return (
     <div>
-        <figure onClick={handleClickOpen}>
+        <figure onClick={handleClickOpen} style={{cursor: 'pointer'}}>
             <img src="assets/cardBackEx.jpg" alt="" />
         </figure>
         <Dialog fullScreen={fullScreen} open={open}    onClose={handleClose} aria-labelledby="responsive-dialog-title"
