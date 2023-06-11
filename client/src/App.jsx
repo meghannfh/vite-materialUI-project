@@ -5,9 +5,7 @@ import './App.css';
 import Navbar from '../src/components/Navbar';
 import Home from '../src/pages/Home';
 import Login from '../src/pages/Login';
-import SignUp from '../src/pages/SignUp';
 import Profile from '../src/pages/Profile';
-import AddCard from '../src/pages/AddCard';
 import About from '../src/pages/About';
 
 
@@ -24,12 +22,6 @@ function App() {
           <Route 
           path="/login"
           element={<Login />}/>
-          <Route 
-          path="/signup"
-          element={<SignUp />}/>
-          <Route 
-          path="/addCard"
-          element={<AddCard />}/>
           <Route 
           path="/profile"
           element={<Profile />}/>
