@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/Button';
 
 export default function Login() {
     const [sign, setSign] = React.useState(false);
@@ -11,7 +12,7 @@ export default function Login() {
             <>
                 <section class='SignUp box'>
                     <section>
-                        <h1>Sign Up</h1>
+                        <h1>Create An Account</h1>
                     </section>
                     <form action="">
                         <article>

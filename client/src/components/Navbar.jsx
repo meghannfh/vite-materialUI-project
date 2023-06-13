@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 export default function Navbar(auth) {
     return(
@@ -9,7 +10,7 @@ export default function Navbar(auth) {
         <article></article>
         <article>
             <ul>
-                <Link to='/login'><button>Login</button></Link>
+                <Link to='/login'><Button text='Login'></Button></Link>
             </ul>
         </article>
     </header>
