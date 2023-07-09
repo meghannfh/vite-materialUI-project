@@ -20,6 +20,10 @@ export default function Login() {
                             <input type="text" />
                         </article>
                         <article>
+                            <h3>Retype Email</h3>
+                            <input type="text" />
+                        </article>
+                        <article>
                             <h3>Password</h3>
                             <input type="password" />
                         </article>
@@ -27,8 +31,13 @@ export default function Login() {
                             <h3>Retype Password</h3>
                             <input type="password" />
                         </article>
-                        <button>Sign Up</button>
-                        <button onClick={handleClick}>Sign In</button>
+                        <br />
+                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+                            <Button bgColor='steelblue' text='Sign Up'/>
+                            <div onClick={handleClick}>
+                                <Button bgColor='green' text='Sign In' />
+                            </div>
+                        </div>
                     </form>
                 </section>
             </>
@@ -49,8 +58,15 @@ export default function Login() {
                             <h3>Password</h3>
                             <input type="password" />
                         </article>
-                        <button>Sign In</button>
-                        <button onClick={handleClick}>Sign Up</button>
+                        <br />
+                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+                            <Button bgColor='steelblue' text='Sign In'></Button>
+                            <br />
+                            <br />
+                            <div onClick={handleClick}>
+                                <Button bgColor='green' text='Sign Up' />
+                            </div>
+                        </div>
                     </form>
                 </section>
             </>

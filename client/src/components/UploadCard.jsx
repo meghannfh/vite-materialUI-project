@@ -41,7 +41,8 @@ export default function ResponsiveDialog() {
           </DialogContentText>
           <DialogContentText>OR</DialogContentText>
           <DialogContentText>
-            <Button variant="outlined" onClick={Camera.startCameraa}>Take a photo</Button>
+            <Button variant="outlined" onClick={Camera.startCameraa}>Take photo of front of card</Button>
+            <Button variant="outlined" onClick={Camera.startCameraa}>Take photo of back of card</Button>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

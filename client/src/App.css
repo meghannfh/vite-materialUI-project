@@ -72,17 +72,13 @@ html {
   cursor: pointer;
 }
 
-.Home {
-  display: grid;
-  grid-template-rows: [row1-start] 50% [row2-start] 50% [row2-end];
-}
 .Home h1 {
   font-size: 4rem;
 }
 .Home img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
   opacity: 90%;
 }
 .Home button{
@@ -121,7 +117,7 @@ label[for="file-upload"] {
 .cardBoard {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1rem;
+  grid-gap: 1rem;
 }
 
 .ModalCard img {

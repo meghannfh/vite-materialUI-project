@@ -1,10 +1,15 @@
-export default function Button({ text }){
+import React from 'react';
 
+export default function Button({text, textColor, bgColor}) {
     return (
-        <div>
-            <button className='button'>
+         <button
+            style={{
+                color: textColor || 'seashell',
+                backgroundColor: bgColor || '#a8ceb4'
+            }} 
+            className='button'
+        >
                 {text}
-            </button>
-        </div>
+         </button>
     )
 }
