@@ -7,6 +7,7 @@ import Home from '../src/pages/Home';
 import Login from '../src/pages/Login';
 import Profile from '../src/pages/Profile';
 import About from '../src/pages/About';
+import History from '../src/pages/History';
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
           <Route 
           path="/about"
           element={<About />}/>
+          <Route 
+          path="/history"
+          element={<History />}/>
         </Routes>
       </div>
     </BrowserRouter>

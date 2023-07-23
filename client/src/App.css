@@ -60,7 +60,7 @@ html {
 .navbar img {
   height: 4rem;
 }
-.navbar button {
+.button {
   width: 7rem;
   height: 3rem;
   border: none;
@@ -72,17 +72,13 @@ html {
   cursor: pointer;
 }
 
-.Home {
-  display: grid;
-  grid-template-rows: [row1-start] 50% [row2-start] 50% [row2-end];
-}
 .Home h1 {
   font-size: 4rem;
 }
 .Home img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
   opacity: 90%;
 }
 .Home button{
@@ -111,9 +107,6 @@ html {
   margin: 0 auto;
 }
 
-/* input[type="file"] {
-  display: none;
-} */
 label[for="file-upload"] {
   border: 1px solid #ccc;
   display: inline-block;
@@ -123,11 +116,37 @@ label[for="file-upload"] {
 
 .cardBoard {
   display: grid;
-  grid-template-columns: 50% 50%;
-  row-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 .ModalCard img {
   width: 100%;
   object-fit: contain;
+}
+
+.historyCard {
+  max-width: 100%;
+  max-height: 15rem;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+}
+.historyCard p {
+  padding: 0 1rem;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.infoInput {
+  display: flex;
+  flex-direction: column;
+}
+.infoInput input {
+  height: 30px;
+}
+#eventWhat {
+  vertical-align: auto;
+  height: 100px;
 }

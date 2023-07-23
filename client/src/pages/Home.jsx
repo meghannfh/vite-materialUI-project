@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
+import Button from '../components/Button';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -19,7 +20,9 @@ export default function Home() {
                 </main>
                 <article>
                     <h1>Your medical history in your hands.</h1>
-                    <button onClick={routeLogin}>Get Started</button>
+                    <div onClick={routeLogin}>
+                        <Button bgColor='steelblue' text='Get Started'></Button>
+                    </div>
                 </article>
             </section>
             <Footer />
